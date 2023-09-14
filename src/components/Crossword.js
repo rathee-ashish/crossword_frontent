@@ -42,7 +42,7 @@ class Crossword extends Component {
       for (let col = 0; col < columns; col++) {
 
     
-        if(myString.charAt(cnt) ==" " || cnt+1>len ){
+        if(myString.charAt(cnt) === " " || cnt+1>len ){
           blocks.push({
             id: row * columns + col + 1,
             letter: ' ', 
@@ -51,7 +51,7 @@ class Crossword extends Component {
           });
         }
         else{
-          if( gameString.charAt(cnt)==" " ){
+          if( gameString.charAt(cnt)===" " ){
             blocks.push({
               id: row * columns + col + 1,
               letter: '',
@@ -167,11 +167,11 @@ class Crossword extends Component {
                 className={`Block ${
                   block.isEditable ? 'Editable' : 'Uneditable'
                 } ${
-                  block.letter == block.originalLetter
+                  block.letter === block.originalLetter
                     ? 'Correct'
                     : block.letter === ' '
                     ? 'default'
-                    : block.letter == ''
+                    : block.letter === ''
                     ? 'Empty'
                     : 'Incorrect'
                 }`}
