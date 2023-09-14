@@ -32,10 +32,10 @@ class Crossword extends Component {
     const gameString ="W  d s g   n  develop a    ca      fha  r n th  w r d an  sho c se the futu  " ;
 
 
-    let array= myString.split(' ');
+  
     let columns=17;
     const blocks = [];
-    let x=0;
+  
     let cnt=0;
     let len = myString.length;
     for (let row = 0; row < 5; row++) {
